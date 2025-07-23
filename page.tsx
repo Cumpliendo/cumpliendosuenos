@@ -1,15 +1,9 @@
-type Props = {
-  params: {
-    id: string;
-  };
-};
-
-export default async function RifaPage({ params }: Props) {
+export default function RifaPage({ params }: { params: { id: string } }) {
   const { id } = params;
 
   return (
     <div>
-      <h1>Detalles de la rifa {id}</h1>
+      <h1>Rifa: {id}</h1>
     </div>
   );
 }
