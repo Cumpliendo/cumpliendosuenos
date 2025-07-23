@@ -1,18 +1,10 @@
-import { Metadata } from "next";
-
 type Props = {
   params: {
     id: string;
   };
 };
 
-export function generateMetadata({ params }: Props): Metadata {
-  return {
-    title: `Rifa ${params.id}`,
-  };
-}
-
-export default function RifaPage({ params }: Props) {
+export default async function RifaPage({ params }: Props) {
   const { id } = params;
 
   return (
